@@ -1,25 +1,36 @@
+@use "./functions" as func;
+
 /*-------------------------------
             COLORS
 ---------------------------------*/
-$clr-primary: green;
-$clr-accent: red;
-$clr-neutral: yellow;
+$clr-accent: hsl(0, 100%, 66%);
+$clr-neutral-light: hsl(270, 3%, 87%);
+$clr-neutral-mid: hsl(279, 6%, 55%);
+$clr-neutral-dark: hsl(278, 68%, 11%);
+
+/*-------------------------------
+            GRADIENTS
+---------------------------------*/
+$grdt-primary: linear-gradient(
+  to right,
+  hsl(249, 99%, 64%),
+  hsl(278, 94%, 30%)
+);
 
 /*-------------------------------
             TYPOGRAPHY
 ---------------------------------*/
 $font-families: (
-  primary: (
-    "Montserrat",
+  neutral: (
+    "Space Grotesk",
     sans-serif,
   ),
 );
 $font-sizes: (
   primary: 2rem,
-  neutral: 1rem,
+  neutral: func.rem(18px),
 );
 $font-weights: (
-  primary: 700,
   neutral: 500,
 );
 
