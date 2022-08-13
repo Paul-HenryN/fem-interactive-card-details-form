@@ -48,6 +48,7 @@ input, button, textarea, select {
 }
 
 body {
+  color: #21092f;
   background-color: #fff;
   font-family: Space Grotesk, sans-serif;
   font-size: 1.125rem;

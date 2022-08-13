@@ -5,4 +5,5 @@ body {
   font-family: map-get($map: var.$font-families, $key: neutral);
   font-size: map-get($map: var.$font-sizes, $key: neutral);
   font-weight: map-get($map: var.$font-weights, $key: neutral);
+  color: var.$clr-neutral-dark;
 }
