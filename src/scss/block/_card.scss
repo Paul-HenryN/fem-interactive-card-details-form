@@ -3,15 +3,38 @@
 @use "../abstracts/functions" as func;
 
 .card {
-  width: func.rem(300px);
+  color: white;
+  width: clamp(func.rem(300px), 75%, func.rem(350px));
   aspect-ratio: 447/245;
-  background-color: yellow;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  @include mix.flexCol(flex-start, space-between);
+  padding: 1em 1.25em;
+
   @at-root &_front {
     background-image: url("../../images/bg-card-front.png");
   }
   @at-root &_back {
     background-image: url("../../images/bg-card-back.png");
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  @at-root &__logo {
+    width: 20%;
+    margin-bottom: 30px;
+  }
+
+  @at-root &__footer {
+    width: 100%;
+    @include mix.flexRow(center, space-between);
+  }
+
+  @at-root &__holder {
+    text-transform: uppercase;
+  }
+
+  @at-root &__digits {
+    margin-right: 20px;
   }
 }
