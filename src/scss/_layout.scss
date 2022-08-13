@@ -1,7 +1,18 @@
 @use "./abstracts/mixins" as mix;
+@use "./abstracts/functions" as func;
 
+main {
+  @include mix.flexCol(stretch, stretch);
+  min-height: 100vh;
+  row-gap: func.rem(100px);
+}
 .hero {
+  width: 100%;
   position: relative;
+  height: func.rem(300px);
+  background-image: url("../../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @at-root &__card {
     position: absolute;

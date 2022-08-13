@@ -99,7 +99,21 @@ body {
   margin-right: 20px;
 }
 
+main {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  row-gap: 6.25rem;
+  display: flex;
+}
+
 .hero {
+  width: 100%;
+  height: 18.75rem;
+  background-image: url("bg-main-mobile.3cde4cdf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -117,6 +131,27 @@ body {
   z-index: 20;
   bottom: -20%;
   left: 5%;
+}
+
+@media (min-width: 769px) {
+  main {
+    flex-direction: row;
+  }
+
+  .hero {
+    height: auto;
+    background-image: url("bg-main-desktop.5139ad05.png");
+  }
+
+  .hero__card_front {
+    top: 20%;
+    left: 65%;
+  }
+
+  .hero__card_back {
+    top: 45%;
+    left: 75%;
+  }
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

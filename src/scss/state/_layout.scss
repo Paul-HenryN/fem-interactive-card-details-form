@@ -1,0 +1,26 @@
+@use "../abstracts/mixins" as mix;
+
+main {
+  @include mix.mq(tabletPortrait) {
+    flex-direction: row;
+  }
+}
+
+.hero {
+  @include mix.mq(tabletPortrait) {
+    height: auto;
+    background-image: url("../../images/bg-main-desktop.png");
+
+    @at-root &__card {
+      @at-root &_front {
+        top: 20%;
+        left: 65%;
+      }
+
+      @at-root &_back {
+        top: 45%;
+        left: 75%;
+      }
+    }
+  }
+}
