@@ -23,9 +23,44 @@
   </head>
 
   <body>
-    0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
-    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
-    e.g. 123 Confirm
+    <main>
+      <div class="hero">
+        <picture class="hero__bg">
+          <source
+            media="(max-width:769px)"
+            srcset="../images/bg-main-mobile.png"
+          />
+
+          <img src="../images/bg-main-desktop.png" alt="" />
+        </picture>
+
+        <div class="card">
+          <img src="../images/bg-card-front.png" class="card__bg" alt="" />
+
+          <div class="card__content">
+            <img src="../images/card-logo.svg" class="card__logo" alt="" />
+
+            <div class="card__number">0000 0000 0000 0000</div>
+
+            <div class="card__footer">
+              <div class="card__holder">Jane Appleseed</div>
+              <div class="card__serial">00/00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/bg-card-back.png" class="card__bg" alt="" />
+
+          <div class="card__content">
+            <div class="card__digits">000</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    Cardholder Name e.g. Jane Appleseed Card Number e.g. 1234 5678 9123 0000
+    Exp. Date (MM/YY) MM YY CVC e.g. 123 Confirm
 
     <!-- Completed state start -->
 
