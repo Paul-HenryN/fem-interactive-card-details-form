@@ -55,4 +55,20 @@ body {
   font-weight: 500;
 }
 
+.card {
+  width: 18.75rem;
+  aspect-ratio: 447 / 245;
+  background-color: #ff0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_front {
+  background-image: url("bg-card-front.0a4a5e13.png");
+}
+
+.card_back {
+  background-image: url("bg-card-back.53689e1a.png");
+}
+
 /*# sourceMappingURL=index.b10d73a7.css.map */
