@@ -1,0 +1,23 @@
+@use "./abstracts/mixins" as mix;
+
+.hero {
+  position: relative;
+
+  @at-root &__card {
+    position: absolute;
+
+    $offset-x: 5%;
+    $offset-y: 20%;
+
+    @at-root &_back {
+      z-index: 10;
+      top: $offset-y;
+      right: $offset-x;
+    }
+    @at-root &_front {
+      z-index: 20;
+      bottom: -$offset-y;
+      left: $offset-x;
+    }
+  }
+}

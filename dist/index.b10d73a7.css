@@ -99,4 +99,24 @@ body {
   margin-right: 20px;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero__card {
+  position: absolute;
+}
+
+.hero__card_back {
+  z-index: 10;
+  top: 20%;
+  right: 5%;
+}
+
+.hero__card_front {
+  z-index: 20;
+  bottom: -20%;
+  left: 5%;
+}
+
 /*# sourceMappingURL=index.b10d73a7.css.map */
